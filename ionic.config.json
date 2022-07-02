@@ -1,0 +1,7 @@
+{
+  "name": "Gjaai-Background-Removal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
