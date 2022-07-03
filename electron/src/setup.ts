@@ -223,8 +223,9 @@ export function setupContentSecurityPolicy(customScheme: string): void {
       responseHeaders: {
         ...details.responseHeaders,
         'Content-Security-Policy': [
-          
-          `default-src ${customScheme}://* 'unsafe-inline' devtools://* 'unsafe-eval' connect-src * 'unsafe-inline' data:`
+          electronIsDev
+            ? `default-src ${customScheme}://* 'unsafe-inline' devtools://* 'unsafe-eval' data:`
+            : `default-src ${customScheme}://* 'unsafe-inline' data:`,
         ],
       },
     });

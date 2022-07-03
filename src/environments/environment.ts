@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  API: "https://www.gjaai.in/"
+  // API: "https://www.gjaai.in/"
+  API: "http://localhost:8081/"
 };
 
 /*
