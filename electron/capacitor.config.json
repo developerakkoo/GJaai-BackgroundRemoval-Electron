@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Gjaai-Background-Removal",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
